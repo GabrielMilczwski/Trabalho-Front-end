@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'arcade';
+    src: url('fonts/ARCADE.ttf') format('truetype'),
+         url('fonts/ARCADE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body {
+    font-family: 'arcade', sans-serif;
+    color: rgb(241, 165, 33);
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+   
+}
+
+.todososcard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 12000px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+ ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+
+a {
+    color: rgb(241, 165, 33);
+    text-decoration: none;
+}
+
+
+ /* header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid maroon
+}  */
+
+.topo{
+    height: 80px;
+    margin: 120px;
+    box-shadow: 20px 20px 50px rgb(30, 3, 68);
+    border-radius: 15px;
+    background: rgba(197, 20, 20, 0.5); 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(30, 3, 68);
+    border-left: 1px solid rgb(30, 3, 68);
+    backdrop-filter: blur(2px);
+}
+
+.topo h1 {
+    margin-top: 1px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.topo h2 {
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+ footer img {
+    width: 40px;
+    height: 40px;
+} 
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    
+    margin-top: 2px;
+}
+
+ .center {
+    text-align: center;
+} 
+
+h1 {
+    color: rgb(241, 165, 33);
+    margin-top: auto;
+    font-size: large;
+}
+
+h2 {
+    color: rgb(251, 251, 251);
+    margin-top: auto;
+    font-size: large;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+ nav a:hover {
+
+color: maroon;
+} 
+
+project.html {
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.sobremim h3{
+    position: relative;
+    top: 1px;
+    right: 20 px;
+    left: 95px;
+    font-size: 20px;
+    color:241, 165, 33;
+    letter-spacing: 6px;
+    
+}
+
+ .sobremim h4{
+    position: auto;
+    top: 20px;
+    right: 1px;
+    left: 10px;
+    font-size: 15px;
+    color:rgb(241, 237, 237);
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    
+} 
+
+.Formação h3 {
+    position: relative;
+    top: 0; /* Define a posição inicial no topo */
+    right: 20px;
+    left: 111px;
+    font-size: 20px;
+    color: rgb(241, 165, 33);
+    margin-bottom: 20px; /* Margem no fundo do h3 */
+}
+
+.Formação h4 {
+    position: relative;
+    top: 10px; 
+    right: 1px;
+    left: 10px;
+    font-size: 15px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; 
+    letter-spacing: 2px;
+}
+
+.Experiência h3{
+    position: relative;
+    top: 1px;
+    right: 20 px;
+    left: 80px;
+    font-size: 20px;
+    color:241, 165, 33
+}
+
+.Experiência h4{
+    position: auto;
+    top: 20px;
+    right: 1px;
+    left: 10px;
+    font-size: 15px;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+.card{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(30, 3, 68);
+    border-radius: 15px;
+    background: rgba(197, 20, 20, 0.5); 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(30, 3, 68);
+    border-left: 1px solid rgb(30, 3, 68);
+    backdrop-filter: blur(8px);
+}   
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400px;
+    height: 400px;
+    display: flex;
+
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+
+}
+
+#radio1:checked ~ .slide.first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide.first {
+    margin-left: -25%;
+}
+
+
+#radio3:checked ~ .slide.first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .slide.first {
+    margin-left: -75%;
+}
+
+.slide.first {
+    margin-left: 0;
+}
+
+.navigation-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;  
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+
+}
+#radio2:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+    
+}
+#radio3:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+    
+}
+#radio4:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+    
+}
+
+
+.slides {
+    width: 800px; /* largura total do slider */
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 800px; /* largura de cada imagem */
+    display: flex;
+}
+
+.slide img {
+    width: 100%; /* ocupar toda a largura do espaço do slide */
+    height: auto; /* altura automática, mantendo a proporção da imagem */
+}
+
+/* -------------- */
+.proj1 img{
+    width: 140px;
+    position: fixed;
+    left: 75%;
+    top: 35%;
+}
+
+.proj2 img{
+    width: 140px;
+    position: fixed;
+    left: 53%;
+    top: 35%;
+}
+
+.proj3  img{
+    width: 140px;
+    position: fixed;
+    left:32%;
+    top: 35%;
+}
+
+.proj1 h2{
+    position: fixed;
+    left: 84%;
+    top: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.proj2 h2{
+    position: fixed;
+    left: 56%;
+    top: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.proj3 h2{
+    position: fixed;
+    left: 41%;
+    top: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
